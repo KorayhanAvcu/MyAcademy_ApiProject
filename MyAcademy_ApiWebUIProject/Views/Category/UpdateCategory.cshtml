@@ -1,0 +1,18 @@
+﻿@using MyAcademy_ApiWebUIProject.Dtos.CategoryDtos
+@model UpdateCategoryDto
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<form method="post">
+    <div class="container">
+        <input type="hidden" asp-for="CategoryId" />
+        <br /><br />
+        <label>Kategori Adı</label>
+        <input type="text" asp-for="CategoryName" class="form-control" />
+        <button class="btn btn-info">Güncelle</button>
+    </div>
+</form>
